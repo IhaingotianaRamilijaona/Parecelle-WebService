@@ -4,10 +4,8 @@ import java.sql.*;
 import java.util.*;
 import java.util.Date;
 
-import org.bson.Document;
 import org.bson.conversions.Bson;
 
-import com.google.gson.Gson;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -128,9 +126,6 @@ public class Terrain {
         MongoClient mongoClient = ConnectMongoDb.getConnection();
         MongoDatabase mongoDatabase = mongoClient.getDatabase("parecelle");
         MongoCollection<Terrain> collection = mongoDatabase.getCollection("terrain", Terrain.class);
-        // Gson gson = new Gson();
-        // String json = gson.toJson(this);
-        // Bson bson = Filters.eq(json);
 
         Bson filter = Filters.and(
             Filters.eq("longitude", this.longitude),
