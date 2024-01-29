@@ -1,0 +1,107 @@
+[
+    {
+      "description": "Terrain agricole avec sol fertile, adapté à la culture de céréales.",
+      "latitude": 24,
+      "longitude": 68,
+      "nombreParecelles": 3,
+      "parecelles": [
+        {
+          "cultures": [
+            { "idCulture": 1, "nomCulture": "Blé", "prix": 10000 },
+            { "idCulture": 3, "nomCulture": "Riz", "prix": 15000 }
+          ],
+          "rendement": 120,
+          "taille": 180
+        },
+        {
+          "cultures": [
+            { "idCulture": 2, "nomCulture": "Maïs", "prix": 12000 },
+            { "idCulture": 4, "nomCulture": "Soja", "prix": 11000 }
+          ],
+          "rendement": 95,
+          "taille": 120
+        },
+        {
+          "cultures": [
+            { "idCulture": 5, "nomCulture": "Avoine", "prix": 13000 },
+            { "idCulture": 2, "nomCulture": "Maïs", "prix": 12000 }
+          ],
+          "rendement": 110,
+          "taille": 150
+        }
+      ],
+      "proprietaire": { "idUser": 1, "nomUser": "John", "motDePasse": "password123" },
+      "urlPhoto": []
+    },
+
+
+    {
+      "description": "Terrain avec sol riche pour divers types de cultures.",
+      "latitude": 30,
+      "longitude": 80,
+      "nombreParecelles": 4,
+      "parecelles": [
+        {
+          "cultures": [
+            { "idCulture": 3, "nomCulture": "Riz", "prix": 15000 },
+            { "idCulture": 1, "nomCulture": "Blé", "prix": 10000 }
+          ],
+          "rendement": 130,
+          "taille": 200
+        },
+        {
+          "cultures": [
+            { "idCulture": 2, "nomCulture": "Maïs", "prix": 12000 },
+            { "idCulture": 5, "nomCulture": "Avoine", "prix": 13000 }
+          ],
+          "rendement": 105,
+          "taille": 130
+        },
+        {
+          "cultures": [
+            { "idCulture": 4, "nomCulture": "Soja", "prix": 11000 },
+            { "idCulture": 1, "nomCulture": "Blé", "prix": 10000 }
+          ],
+          "rendement": 115,
+          "taille": 170
+        },
+        {
+          "cultures": [
+            { "idCulture": 2, "nomCulture": "Maïs", "prix": 12000 },
+            { "idCulture": 3, "nomCulture": "Riz", "prix": 15000 }
+          ],
+          "rendement": 125,
+          "taille": 180
+        }
+      ],
+      "proprietaire": { "idUser": 2, "nomUser": "Alice", "motDePasse": "abc123" },
+      "urlPhoto": []
+    },
+
+    {
+      "description": "Grande étendue de terrain pour des cultures diverses.",
+      "latitude": 40,
+      "longitude": 90,
+      "nombreParecelles": 2,
+      "parecelles": [
+        {
+          "cultures": [
+            { "idCulture": 2, "nomCulture": "Maïs", "prix": 12000 },
+            { "idCulture": 5, "nomCulture": "Avoine", "prix": 13000 }
+          ],
+          "rendement": 110,
+          "taille": 160
+        },
+        {
+          "cultures": [
+            { "idCulture": 3, "nomCulture": "Riz", "prix": 15000 },
+            { "idCulture": 4, "nomCulture": "Soja", "prix": 11000 }
+          ],
+          "rendement": 95,
+          "taille": 140
+        }
+      ],
+      "proprietaire": { "idUser": 3, "nomUser": "Bob", "motDePasse": "pass456" },
+      "urlPhoto": []
+    }
+  ]

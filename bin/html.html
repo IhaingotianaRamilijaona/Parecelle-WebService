@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+</body>
+<script>
+    window.addEventListener('load', function(){
+        var data = Array();
+        var xhr = create_HttpRequest();
+        xhr.addEventListener("load", function(event) { 
+            data = JSON.parse(xhr.responseText);
+        });
+        xhr.open("GET", "localhost:8080/Test/Parecelles",false);
+        xhr.send(null);
+        console.log(data);
+    });
+
+    function create_HttpRequest(){
+        var xhr; 
+        try {  xhr = new ActiveXObject('Msxml2.XMLHTTP');   }
+        catch (e) 
+        {
+            try {   xhr = new ActiveXObject('Microsoft.XMLHTTP'); }
+            catch (e2) 
+            {
+                try {  xhr = new XMLHttpRequest();  }
+                catch (e3) {  xhr = false;   }
+            }
+        }
+        return xhr;
+    }
+</script>
+</html>
